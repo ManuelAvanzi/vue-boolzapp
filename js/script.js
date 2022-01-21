@@ -1,6 +1,12 @@
 new Vue ({
     el:"#app",
     data:{
+
+        //indice 
+        activeIndex: 0,
+
+        //messaggio vuoto del utente
+        myMessage: '',
         contacts: [
             {
                 name: 'Michele',
@@ -93,5 +99,13 @@ new Vue ({
         ]
         
         
-    }
+    },
+    methods: {
+        selectedChat: function (index) {
+          this.activeIndex = index;
+        },
+        sendMessage: function () {
+     
+        }
+      },
 })

@@ -173,10 +173,38 @@ i{
     padding-right: 20px;
     padding-left: 25px;
 }
-  
+
 .message{
     width: 83%;
     height: 50px;
     border: 2px solid black;
     padding: 15px;
+}
+  
+.sent{
+    background-color: #dcf8c6;
+    position: relative;
+    top: 100px;
+    left: 400px;
+    width: 300px;
+    height: 60px;
+    border: 1px solid #ccc;
+    padding: 11px;
+    color: #031c4e;
+    border-radius: 8px;
+    display: block;
+}
+  
+.received{
+    background-color: #fff;
+    position: relative;
+    top: 130px;
+    left: 30px;
+    width: 300px;
+    height: 60px;
+    border: 1px solid #ccc;
+    padding: 11px;
+    color: #031c4e;
+    border-radius: 8px;
+    display: block;
 }
