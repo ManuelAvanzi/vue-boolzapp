@@ -111,11 +111,14 @@ new Vue ({
 
           let activeContact = this.contacts[this.activeIndex];
           console.log(activeContact)
-          activeContact.messages.push(  {
-          date: '22/01/2022 07:50',
-          text: this.myMessage,
-          status: 'sent',
-      });
+
+          activeContact.messages.push(
+                {
+                  date: '22/01/2022 07:50',
+                  text: this.myMessage,
+                  status: 'sent',
+               });
+      
       this.myMessage = '';
     },
         
