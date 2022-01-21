@@ -28,6 +28,7 @@
   }
   
   img{
+    cursor: pointer;
     height: 50px;
     border-radius: 100%;
     vertical-align: middle;
@@ -36,7 +37,7 @@
   .sidebar{
     width: 35%;
     height: 100%;
-    border-right: blue solid 1px;
+    border-right: rgb(0, 0, 0) solid 1px;
   }
   
 .sidebar-a{
@@ -50,6 +51,7 @@
   
 .icons-box i{
     margin-right: 15px;
+    cursor: pointer;
 }
   
 .sidebar-b{
@@ -190,7 +192,7 @@ i{
     height: 60px;
     border: 1px solid #ccc;
     padding: 11px;
-    color: #031c4e;
+    color: #000000;
     border-radius: 8px;
     display: block;
 }
@@ -204,7 +206,13 @@ i{
     height: 60px;
     border: 1px solid #ccc;
     padding: 11px;
-    color: #031c4e;
+    color: #000000;
     border-radius: 8px;
     display: block;
+}
+.hover-yellow{
+    color: rgba(255, 255, 0, 0.602);
+}
+.hover-green{
+    color:springgreen
 }

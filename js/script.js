@@ -108,13 +108,13 @@ new Vue ({
         sendMessage: function () {
           console.log(`invio messaggio`)
 
-          
+
           let activeContact = this.contacts[this.activeIndex];
           console.log(activeContact)
           activeContact.messages.push(  {
-          date: '10/01/2020 15:50:00',
+          date: '22/01/2022 07:50',
           text: this.myMessage,
-          status: 'sent'
+          status: 'sent',
       });
       this.myMessage = '';
     },
