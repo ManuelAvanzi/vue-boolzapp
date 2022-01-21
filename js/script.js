@@ -5,6 +5,8 @@ new Vue ({
         //indice 
         activeIndex: 0,
 
+        //search from input
+        inputText: '',
         //messaggio vuoto del utente
         myMessage: '',
         contacts: [
@@ -101,10 +103,12 @@ new Vue ({
         
     },
     methods: {
+        //cambio persona e chat 
         selectedChat: function (index) {
           this.activeIndex = index;
           console.log(`ho selezionato ${this.activeIndex}`);
         },
+        //invio messaggio e mi rispondo dopo un secondo 
         sendMessage: function () {
           console.log(`invio messaggio`)
 
@@ -119,16 +123,18 @@ new Vue ({
                   status: 'sent',
                });
       
-      this.myMessage = '';
-
-      setTimeout(function() {
-          
+         this.myMessage = '';
+        setTimeout(function() {  
         activeContact.messages.push({
          
           text: 'ok',
           status: 'received'
         });
-      }, 3000)
+        }, 1000)
+     },
+     //cerco una persona tra i contatti 
+     searchUser:function(){
+
      }
     },
 
