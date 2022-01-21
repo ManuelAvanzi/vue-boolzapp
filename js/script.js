@@ -114,17 +114,22 @@ new Vue ({
 
           activeContact.messages.push(
                 {
-                  date: '22/01/2022 07:50',
+                 
                   text: this.myMessage,
                   status: 'sent',
                });
       
       this.myMessage = '';
+
+      setTimeout(function() {
+          
+        activeContact.messages.push({
+         
+          text: 'ok',
+          status: 'received'
+        });
+      }, 3000)
+     }
     },
-        
 
-
-
-
-      },
-})
+});
